@@ -1,0 +1,89 @@
+$side-bar-icon-list: ('search', 'featured', 'music', 'videos', 'people');
+
+.side-bar {
+  @include box-sizing(content-box);
+  background: #000;
+  font-size: 14px;
+
+  @each $item in $side-bar-icon-list {
+    .#{$item}-icon {
+      display: inline-block;
+      @include icon('../img/sidebar/#{$item}.svg', 16px, 16px);
+    }
+  }
+
+  .brand {
+    @include icon('../img/sidebar/brand.svg', 100px, 42px);
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      margin: 10px 0;
+    }
+
+    a {
+      color: $default-font-color;
+
+      &.active {
+        color: #fff;
+      }
+
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    .nav-header {
+      font-size: 10px;
+      font-weight: $font-weight-bolder;
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 14px;
+
+    &[name="sign-up"] {
+      margin-top: 60px;
+      font-weight: $font-weight-bold;
+    }
+
+    &:hover,
+    &:active,
+    &[name="sign-in"]:hover,
+    &[name="sign-in"]:active
+     {
+      background: #fff;
+      color: black;
+    }
+
+
+    &[name="sign-in"] {
+      border: none;
+      color: $default-font-color;
+    }
+  }
+  .side-bar-footer {
+    @include position(fixed, null null 70px 25px);
+    @include size(100px auto);
+    font-size: 11px;
+
+    ul {
+      margin-bottom: 15px;
+
+      li {
+        display: inline-block;
+        margin: 0;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}

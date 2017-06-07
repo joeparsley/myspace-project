@@ -1,0 +1,19 @@
+$font-stack: 'Open Sans', "Lucida Sans", "Lucida Grande", sans-serif;
+
+$default-font-color: #666;
+$heading-font-color: #000;
+
+$font-weight-normal: 400;
+$font-weight-light: 300;
+$font-weight-bold: 700;
+$font-weight-bolder: 800;
+
+
+body {
+  font-family: $font-stack;
+  color: $default-font-color;
+}
+
+a {
+  text-decoration: none;
+}
