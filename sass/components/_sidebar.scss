@@ -10,6 +10,7 @@ $side-bar-icon-list: ('search', 'featured', 'music', 'videos', 'people');
     .#{$item}-icon {
       display: inline-block;
       @include icon('../img/sidebar/#{$item}.svg', 16px, 16px);
+      margin-right: 10px;
     }
     a:hover .#{$item}-icon {
       @include icon('../img/sidebar/#{$item}-white.svg', 16px, 16px);

@@ -1,13 +1,92 @@
 $footer-background-color: #272727;
 $player-background-color: #1d1d1d;
 
+$play-controls-icon-list: ('rewind', 'play', 'forward');
+$mode-controls-icon-list: ('shuffle', 'repeat');
+
+
 .footer {
   background-color: $footer-background-color;
 
   .controls {
+    @include clearfix;
     @include size(95% 34px);
     margin: 12px auto 0;
     background-color: $player-background-color;
     border-radius: 3px;
+
+    .play-controls {
+      float: left;
+      @each $item in $play-controls-icon-list {
+        .#{$item}-icon {
+          @include icon('../img/footer/#{$item}.png', 24px, 24px);
+          border: none;
+          background-color: $footer-background-color;
+          margin-top: 5px;
+        }
+      }
+      .rewind-icon {
+        margin-left: 5px;
+      }
+      .connect-icon {
+        position: relative;
+        border: none;
+        background-color: $footer-background-color;
+        @include size(24px);
+        padding: 0;
+        top: 3px;
+
+        span {
+            display: inline-block;
+            border-radius: 100%;
+            border: 2px solid rgba(255,255,255,0.8);
+            @include size(12px 12px);
+            line-height: 12px;
+            position: relative;
+        }
+
+        span:first-child {
+          top: 1px;
+          left: 3px;
+        }
+
+        span:last-child {
+          top: 1px;
+          right: 3px;
+        }
+      }
+    }
+    .mode-controls {
+      float: right;
+      @each $item in $mode-controls-icon-list {
+        .#{$item}-icon {
+          @include icon('../img/footer/#{$item}.png', 24px);
+          border: none;
+
+          @include size(24px);
+          margin-top: 5px;
+          margin-right: 5px;
+        }
+      }
+    }
+    .volume-controls {
+      float: right;
+
+      .speaker-icon {
+        @include icon('../img/footer/speaker.png', 24px);
+        border: none;
+        @include size(24px);
+        margin-top: 5px;
+        margin-right: 5px;
+      }
+    }
+    .now-playing {
+      span {
+        display: inline-block;
+        font-size: 14px;
+        margin-top: 8px;
+        margin-left: 5px;
+      }
+    }
   }
 }
