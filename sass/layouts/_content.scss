@@ -7,3 +7,46 @@ $viewport-height: 100%;
   height: $viewport-height;
   margin-left: $sidebar-width;
 }
+
+.main-content {
+  @include grid-container;
+  @include size(100% 100%);
+  margin-top: 20px;
+  background-color: green;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.card-group {
+  background-color: #f7f7f7;
+
+  .wrapper {
+    @include grid-container;
+    padding: 30px 0 10px 0;
+  }
+}
+.best-in {
+  background-color: #fff;
+
+  .wrapper {
+    @include grid-container;
+    padding: 30px 0;
+  }
+}
+
+.exclusives {
+  background-color: #fff;
+
+  .wrapper {
+    @include grid-container;
+    padding: 30px 0;
+  }
+}
+
+.last {
+  padding-bottom: 70px;
+}

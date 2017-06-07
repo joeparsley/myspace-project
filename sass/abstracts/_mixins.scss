@@ -4,3 +4,15 @@
   background-position: center;
   @include size($width $height);
 }
+
+@mixin tablet-breakpoint {
+  @media #{$tablet-breakpoint} {
+    @content;
+  }
+}
+
+@mixin desktop-breakpoint {
+  @media #{$desktop-breakpoint} {
+    @content;
+  }
+}

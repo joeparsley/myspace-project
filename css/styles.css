@@ -38,6 +38,64 @@ a {
   margin-left: 150px;
 }
 
+.main-content {
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+  background-color: green;
+}
+.main-content::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.card-group {
+  background-color: #f7f7f7;
+}
+.card-group .wrapper {
+  padding: 30px 0 10px 0;
+}
+.card-group .wrapper::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.best-in {
+  background-color: #fff;
+}
+.best-in .wrapper {
+  padding: 30px 0;
+}
+.best-in .wrapper::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.exclusives {
+  background-color: #fff;
+}
+.exclusives .wrapper {
+  padding: 30px 0;
+}
+.exclusives .wrapper::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.last {
+  padding-bottom: 70px;
+}
+
 .footer {
   position: fixed;
   bottom: 0;
@@ -453,6 +511,40 @@ button {
   height: calc(50% - 2px);
   width: 30%;
   float: right;
+}
+
+.content-nav {
+  height: 80px;
+  width: 100%;
+  background: blue;
+}
+.content-nav .wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-group .card {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+  min-height: 300px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .card-group .card {
+    width: calc(50% - 30px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .card-group .card {
+    width: calc(33.33333% - 26.66667px);
+    float: left;
+    margin-left: 20px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

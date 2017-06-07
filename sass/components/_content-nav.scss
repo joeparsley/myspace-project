@@ -1,0 +1,14 @@
+.content-nav {
+  @include size(100% 80px);
+  background: blue;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  a {
+
+  }
+}
