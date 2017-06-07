@@ -53,9 +53,25 @@ button {
   width: 16px;
   margin-right: 10px;
 }
+.side-bar a:hover .search-icon {
+  background-image: url("../img/sidebar/search-white.svg");
+  background-size: 16px 16px;
+  background-position: center;
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
 .side-bar .featured-icon {
   display: inline-block;
   background-image: url("../img/sidebar/featured.svg");
+  background-size: 16px 16px;
+  background-position: center;
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
+.side-bar a:hover .featured-icon {
+  background-image: url("../img/sidebar/featured-white.svg");
   background-size: 16px 16px;
   background-position: center;
   height: 16px;
@@ -71,6 +87,14 @@ button {
   width: 16px;
   margin-right: 10px;
 }
+.side-bar a:hover .music-icon {
+  background-image: url("../img/sidebar/music-white.svg");
+  background-size: 16px 16px;
+  background-position: center;
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
 .side-bar .videos-icon {
   display: inline-block;
   background-image: url("../img/sidebar/videos.svg");
@@ -80,9 +104,25 @@ button {
   width: 16px;
   margin-right: 10px;
 }
+.side-bar a:hover .videos-icon {
+  background-image: url("../img/sidebar/videos-white.svg");
+  background-size: 16px 16px;
+  background-position: center;
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
 .side-bar .people-icon {
   display: inline-block;
   background-image: url("../img/sidebar/people.svg");
+  background-size: 16px 16px;
+  background-position: center;
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
+.side-bar a:hover .people-icon {
+  background-image: url("../img/sidebar/people-white.svg");
   background-size: 16px 16px;
   background-position: center;
   height: 16px;
