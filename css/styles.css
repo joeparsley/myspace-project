@@ -431,4 +431,28 @@ button {
   margin-left: 5px;
 }
 
+.hero {
+  width: 100%;
+  background-color: white;
+}
+.hero .main-square {
+  background-color: green;
+  width: calc(70% - 4px);
+  height: 100%;
+  float: left;
+}
+.hero .top-square {
+  background-color: red;
+  height: calc(50% - 2px);
+  width: 30%;
+  float: right;
+  margin-bottom: 4px;
+}
+.hero .bottom-square {
+  background-color: blue;
+  height: calc(50% - 2px);
+  width: 30%;
+  float: right;
+}
+
 /*# sourceMappingURL=styles.css.map */

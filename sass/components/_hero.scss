@@ -1,0 +1,28 @@
+$hero-width: 100%;
+$main-square-width: calc(70% - 4px);
+$sub-square-width: 30%;
+$sub-square-height: calc(50% - 2px);
+
+.hero {
+  width: $hero-width;
+  background-color: white;
+  .main-square {
+    background-color: green;
+    width: $main-square-width;
+    height: 100%;
+    float: left;
+  }
+
+  .top-square {
+    background-color: red;
+    @include size($sub-square-width $sub-square-height);
+    float: right;
+    margin-bottom: 4px;
+  }
+
+  .bottom-square {
+    background-color: blue;
+    @include size($sub-square-width $sub-square-height);
+    float: right;
+  }
+}
