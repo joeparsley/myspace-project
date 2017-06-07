@@ -6,16 +6,9 @@
 
   @include tablet-breakpoint {
     @include grid-column(6);
-    // &:nth-child(5),
-    // &:nth-child(6) {
-    //   margin-bottom: 0;
-    // }
   }
 
   @include desktop-breakpoint {
     @include grid-column(4);
-    // &:nth-child(4) {
-    //   margin-bottom: 0;
-    // }
   }
 }

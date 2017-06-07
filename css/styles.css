@@ -42,7 +42,6 @@ a {
   height: 100%;
   width: 100%;
   margin-top: 20px;
-  background-color: green;
 }
 .main-content::after {
   clear: both;
@@ -205,9 +204,10 @@ input[type=range]:focus::-ms-fill-upper {
 button {
   padding: 10px 0;
   border: 2px solid white;
-  border-radius: 2px;
+  border-radius: 5px;
   background: transparent;
   color: white;
+  cursor: pointer;
 }
 
 .side-bar {
@@ -545,6 +545,51 @@ button {
     float: left;
     margin-left: 20px;
   }
+}
+
+.best-in {
+  text-align: center;
+  color: black;
+}
+.best-in h2 {
+  padding-top: 30px;
+}
+.best-in .best-in-card {
+  width: calc(50% - 30px);
+  float: left;
+  margin-left: 20px;
+  min-height: 200px;
+  background-color: black;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .best-in .best-in-card {
+    width: calc(33.33333% - 26.66667px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .best-in .best-in-card {
+    width: calc(16.66667% - 23.33333px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+.best-in p {
+  display: block;
+}
+.best-in button {
+  border-color: black;
+  color: black;
+  font-size: 16px;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.best-in button:hover, .best-in button:active {
+  background-color: black;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

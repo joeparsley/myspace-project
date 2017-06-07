@@ -1,0 +1,42 @@
+.best-in {
+  text-align: center;
+  color: black;
+
+  h2 {
+    padding-top: 30px;
+  }
+
+  .best-in-card {
+    @include grid-column(6);
+    min-height: 200px;
+    background-color: black;
+    margin-bottom: 20px;
+
+
+    @include tablet-breakpoint {
+      @include grid-column(4);
+    }
+
+    @include desktop-breakpoint {
+      @include grid-column(2);
+    }
+  }
+
+  p {
+    display: block;
+  }
+
+  button {
+    border-color: black;
+    color: black;
+    font-size: 16px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    &:hover, &:active {
+      background-color: black;
+      color: white;
+    }
+  }
+}

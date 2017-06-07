@@ -12,7 +12,6 @@ $viewport-height: 100%;
   @include grid-container;
   @include size(100% 100%);
   margin-top: 20px;
-  background-color: green;
 }
 
 .wrapper {
