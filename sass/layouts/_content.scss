@@ -1,0 +1,9 @@
+$sidebar-width: 150px;
+$viewport-width: calc(100% - $sidebar-width);
+$viewport-height: 100%;
+
+.viewport {
+  width: $viewport-width;
+  height: $viewport-height;
+  margin-left: $sidebar-width;
+}
