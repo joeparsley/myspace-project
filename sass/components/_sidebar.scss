@@ -4,6 +4,7 @@ $side-bar-icon-list: ('search', 'featured', 'music', 'videos', 'people');
   @include box-sizing(content-box);
   background: #000;
   font-size: 14px;
+  padding: em(21) em(25);
 
   @each $item in $side-bar-icon-list {
     .#{$item}-icon {

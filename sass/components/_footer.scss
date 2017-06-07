@@ -1,0 +1,13 @@
+$footer-background-color: #272727;
+$player-background-color: #1d1d1d;
+
+.footer {
+  background-color: $footer-background-color;
+
+  .controls {
+    @include size(95% 34px);
+    margin: 12px auto 0;
+    background-color: $player-background-color;
+    border-radius: 3px;
+  }
+}

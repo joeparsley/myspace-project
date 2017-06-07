@@ -26,7 +26,14 @@ a {
   left: 0;
   height: 100%;
   width: 100px;
-  padding: 1.3125em 1.5625em;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 58px;
+  width: 100%;
 }
 
 button {
@@ -43,6 +50,7 @@ button {
   box-sizing: content-box;
   background: #000;
   font-size: 14px;
+  padding: 1.3125em 1.5625em;
 }
 .side-bar .search-icon {
   display: inline-block;
@@ -193,6 +201,17 @@ button {
   display: inline-block;
   margin: 0;
   margin-bottom: 4px;
+}
+
+.footer {
+  background-color: #272727;
+}
+.footer .controls {
+  height: 34px;
+  width: 95%;
+  margin: 12px auto 0;
+  background-color: #1d1d1d;
+  border-radius: 3px;
 }
 
 /*# sourceMappingURL=styles.css.map */

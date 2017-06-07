@@ -1,5 +1,4 @@
 .side-bar {
   @include position(fixed, 0 null null 0);
   @include size(100px 100%);
-  padding: em(21) em(25);
 }
