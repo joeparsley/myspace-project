@@ -2,6 +2,19 @@
   @include size(100% 80px);
   position: relative;
 
+  .down-triangle {
+    @include triangle(24px, black, down);
+    position: absolute;
+    right: 20px;
+    top: 36px;
+  }
+  .up-triangle {
+    display: none;
+    @include triangle(24px, black, up);
+    position: absolute;
+    right: 20px;
+    top: 34px;
+  }
   .wrapper {
     overflow: hidden;
 
@@ -9,19 +22,6 @@
       display: none;
     }
 
-    .down-triangle {
-      @include triangle(24px, black, down);
-      position: absolute;
-      right: 20px;
-      top: 36px;
-    }
-    .up-triangle {
-      display: none;
-      @include triangle(24px, black, up);
-      position: absolute;
-      right: 20px;
-      top: 34px;
-    }
   }
 
   ul {
