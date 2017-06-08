@@ -37,18 +37,34 @@ $(document).ready(function() {
       $('.up-triangle').hide();
     }
   });
-  // var i = 2;
-  // setInterval(function() {
-  //   $('.main-square img').attr('src', 'img/hero/hero' + i +'.jpg');
-  //   i++;
-  //   if (i === 5) {
-  //     i = 1;
-  //   }
-  // },3000);
+
+  var carouselInfo = {
+    '1': {
+      src: 'img/hero/hero1.jpg',
+      caption: "'Wonder Woman' scored record-breaking opening weekend"
+    },
+    '2': {
+      src: 'img/hero/hero2.jpg',
+      caption: 'Nine Inch Nails to release new EP soon'
+    },
+    '3': {
+      src: 'img/hero/hero3.jpg',
+      caption: 'New Kanye West tracks deaturing Migos and A$AP Rocky leak online'
+    },
+    '4': {
+      src: 'img/hero/hero4.jpg',
+      caption: 'Watch Pharrell and Miley Cyrus perform "happy" at the Manchester'
+    }
+  };
+
+  //TO-DO CAROUSEL
+  var i = 2;
+  setInterval(function() {
+    $('.main-square img').attr('src', carouselInfo[i.toString()].src);
+    $('.main-square h2').html(carouselInfo[i.toString()].caption);
+    i++;
+    if (i === 5) {
+      i = 1;
+    }
+  },5000);
 });
-//
-// var counter = 1;
-// $('imgselector').each(function() {
-//   $(this).attr('src', 'path/600x600(' + counter + ').jpg');
-//   counter++;
-// });

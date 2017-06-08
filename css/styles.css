@@ -514,6 +514,7 @@ button {
 @media screen and (min-width: 768px) {
   .hero .main-square .caption h2 {
     font-size: 25px;
+    text-shadow: 0 0 2px black;
   }
 }
 @media screen and (min-width: 1220px) {
@@ -718,6 +719,9 @@ button {
 }
 .best-in .best-in-card .connect-icon span:last-child {
   margin-right: 5px;
+}
+.best-in .best-in-card .connect-icon:hover {
+  background-color: #b3b3b3;
 }
 .best-in p {
   display: block;
