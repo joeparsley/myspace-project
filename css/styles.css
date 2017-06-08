@@ -547,13 +547,26 @@ button {
 }
 
 .content-nav {
-  height: 80px;
+  height: auto;
   width: 100%;
 }
-.content-nav .wrapper {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.content-nav .wrapper::-webkit-scrollbar {
+  display: none;
+}
+.content-nav ul {
+  list-style-type: none;
+}
+.content-nav .hidden-nav {
+  background-color: green;
+}
+.content-nav .visible-nav {
+  background-color: blue;
+}
+.content-nav li {
+  display: inline-block;
+  margin-top: 32px;
+  margin-bottom: 40px;
+  margin-right: 30px;
 }
 .content-nav a {
   color: black;
