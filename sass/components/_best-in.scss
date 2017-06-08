@@ -7,18 +7,64 @@
   }
 
   .best-in-card {
-    @include grid-column(6);
-    min-height: 200px;
-    background-color: black;
+    @include grid-column(12);
     margin-bottom: 20px;
+    position: relative;
+    min-height: 330px;
 
 
     @include tablet-breakpoint {
       @include grid-column(4);
+      min-height: 320px;
     }
 
     @include desktop-breakpoint {
       @include grid-column(2);
+    }
+
+    img {
+      width: 100%;
+    }
+
+    a {
+      font-size: 14px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      display: inline-block;
+      font-weight: bold;
+      color: #008dde;
+
+      &:hover {
+        color: lighten(#008dde, 20%);
+      }
+    }
+
+    p {
+      font-size: 12px;
+      padding-bottom: 65px;
+    }
+
+    .connect-icon {
+      width: 100%;
+      background-color: #e6e6e6;
+      color: rgba(0,0,0,0.4);
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: $font-weight-bold;
+      height: 45px;
+      border-radius: 3px;
+      position: absolute;
+      bottom: 0;
+      top: auto;
+      left: 0;
+
+      span {
+        border-color: rgba(0,0,0,0.4);
+        @include size(14px);
+      }
+      span:last-child {
+        margin-right: 5px;
+      }
     }
   }
 
@@ -26,7 +72,7 @@
     display: block;
   }
 
-  button {
+  .sign-up {
     border-color: black;
     color: black;
     font-size: 16px;

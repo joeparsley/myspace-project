@@ -363,6 +363,33 @@ button {
   margin-bottom: 4px;
 }
 
+.connect-icon {
+  position: relative;
+  border: none;
+  background-color: #272727;
+  height: 24px;
+  width: 24px;
+  padding: 0;
+  top: 3px;
+}
+.connect-icon span {
+  display: inline-block;
+  border-radius: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  height: 12px;
+  width: 12px;
+  line-height: 12px;
+  position: relative;
+}
+.connect-icon span:first-child {
+  top: 1px;
+  left: 3px;
+}
+.connect-icon span:last-child {
+  top: 1px;
+  right: 3px;
+}
+
 .footer {
   background-color: #272727;
 }
@@ -413,32 +440,6 @@ button {
 }
 .footer .controls .play-controls .rewind-icon {
   margin-left: 5px;
-}
-.footer .controls .play-controls .connect-icon {
-  position: relative;
-  border: none;
-  background-color: #272727;
-  height: 24px;
-  width: 24px;
-  padding: 0;
-  top: 3px;
-}
-.footer .controls .play-controls .connect-icon span {
-  display: inline-block;
-  border-radius: 100%;
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  height: 12px;
-  width: 12px;
-  line-height: 12px;
-  position: relative;
-}
-.footer .controls .play-controls .connect-icon span:first-child {
-  top: 1px;
-  left: 3px;
-}
-.footer .controls .play-controls .connect-icon span:last-child {
-  top: 1px;
-  right: 3px;
 }
 .footer .controls .mode-controls {
   float: right;
@@ -563,7 +564,7 @@ button {
   width: calc(100% - 40px);
   float: left;
   margin-left: 20px;
-  min-height: 300px;
+  min-height: 410px;
   background-color: white;
   margin-bottom: 20px;
 }
@@ -576,10 +577,38 @@ button {
 }
 @media screen and (min-width: 1220px) {
   .card-group .card {
+    min-height: 450px;
     width: calc(33.33333% - 26.66667px);
     float: left;
     margin-left: 20px;
   }
+}
+.card-group .card .card-image {
+  position: relative;
+}
+.card-group .card .card-image img {
+  height: auto;
+  width: 100%;
+}
+.card-group .card .card-image span {
+  position: absolute;
+  bottom: 10%;
+  left: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0 0 1px black;
+}
+.card-group .card .card-content {
+  padding: 20px;
+}
+.card-group .card .card-content h3 {
+  color: black;
+}
+.card-group .card .card-content p {
+  font-weight: 300;
+  opacity: 0.5;
+  margin-top: 20px;
 }
 
 .best-in {
@@ -590,18 +619,19 @@ button {
   padding-top: 30px;
 }
 .best-in .best-in-card {
-  width: calc(50% - 30px);
+  width: calc(100% - 40px);
   float: left;
   margin-left: 20px;
-  min-height: 200px;
-  background-color: black;
   margin-bottom: 20px;
+  position: relative;
+  min-height: 330px;
 }
 @media screen and (min-width: 768px) {
   .best-in .best-in-card {
     width: calc(33.33333% - 26.66667px);
     float: left;
     margin-left: 20px;
+    min-height: 320px;
   }
 }
 @media screen and (min-width: 1220px) {
@@ -611,10 +641,50 @@ button {
     margin-left: 20px;
   }
 }
+.best-in .best-in-card img {
+  width: 100%;
+}
+.best-in .best-in-card a {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  display: inline-block;
+  font-weight: bold;
+  color: #008dde;
+}
+.best-in .best-in-card a:hover {
+  color: #45bbff;
+}
+.best-in .best-in-card p {
+  font-size: 12px;
+  padding-bottom: 65px;
+}
+.best-in .best-in-card .connect-icon {
+  width: 100%;
+  background-color: #e6e6e6;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  height: 45px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  left: 0;
+}
+.best-in .best-in-card .connect-icon span {
+  border-color: rgba(0, 0, 0, 0.4);
+  height: 14px;
+  width: 14px;
+}
+.best-in .best-in-card .connect-icon span:last-child {
+  margin-right: 5px;
+}
 .best-in p {
   display: block;
 }
-.best-in button {
+.best-in .sign-up {
   border-color: black;
   color: black;
   font-size: 16px;
@@ -622,7 +692,7 @@ button {
   margin-top: 20px;
   margin-bottom: 30px;
 }
-.best-in button:hover, .best-in button:active {
+.best-in .sign-up:hover, .best-in .sign-up:active {
   background-color: black;
   color: white;
 }

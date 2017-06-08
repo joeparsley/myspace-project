@@ -1,2 +1,10 @@
 $tablet-breakpoint: 'screen and (min-width: 768px)';
 $desktop-breakpoint: 'screen and (min-width: 1220px)';
+
+
+// footer
+$footer-background-color: #272727;
+$player-background-color: #1d1d1d;
+
+$play-controls-icon-list: ('rewind', 'play', 'forward');
+$mode-controls-icon-list: ('shuffle', 'repeat');
