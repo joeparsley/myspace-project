@@ -1,0 +1,32 @@
+.exclusives {
+
+  h3 {
+    color: black;
+    font-weight: $font-weight-light;
+    margin-bottom: 20px;
+    @include grid-column(12);
+    display: inline-block;
+  }
+
+  .exclusive-video {
+    background-color: black;
+    margin-bottom: 20px;
+    @include grid-column(12);
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+
+    embed,
+    object,
+    iframe {
+      @include position(absolute, 0 null null 0);
+      @include size(100%);
+    }
+    @include tablet-breakpoint {
+      @include grid-column(6);
+      margin-bottom: 0;
+      padding-bottom: 28.125%;
+    }
+  }
+}

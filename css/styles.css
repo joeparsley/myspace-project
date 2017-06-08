@@ -498,6 +498,30 @@ button {
   width: calc(70% - 4px);
   height: 100%;
   float: left;
+  position: relative;
+  color: white;
+}
+.hero .main-square img {
+  height: 100%;
+  width: 100%;
+}
+.hero .main-square .caption {
+  position: absolute;
+  bottom: 10%;
+  left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .hero .main-square .caption h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .hero .main-square .caption h2 {
+    font-size: 40px;
+  }
+}
+.hero .main-square h2 {
+  font-size: 20px;
 }
 .hero .top-square {
   background-color: red;
@@ -506,22 +530,33 @@ button {
   float: right;
   margin-bottom: 4px;
 }
+.hero .top-square img {
+  height: 100%;
+  width: 100%;
+}
 .hero .bottom-square {
   background-color: blue;
   height: calc(50% - 2px);
   width: 30%;
   float: right;
 }
+.hero .bottom-square img {
+  height: 100%;
+  width: 100%;
+}
 
 .content-nav {
   height: 80px;
   width: 100%;
-  background: blue;
 }
 .content-nav .wrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.content-nav a {
+  color: black;
+  text-transform: uppercase;
 }
 
 .card-group .card {
@@ -590,6 +625,45 @@ button {
 .best-in button:hover, .best-in button:active {
   background-color: black;
   color: white;
+}
+
+.exclusives h3 {
+  color: black;
+  font-weight: 300;
+  margin-bottom: 20px;
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+  display: inline-block;
+}
+.exclusives .exclusive-video {
+  background-color: black;
+  margin-bottom: 20px;
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.exclusives .exclusive-video embed,
+.exclusives .exclusive-video object,
+.exclusives .exclusive-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .exclusives .exclusive-video {
+    width: calc(50% - 30px);
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 0;
+    padding-bottom: 28.125%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

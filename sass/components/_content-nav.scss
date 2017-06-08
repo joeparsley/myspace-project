@@ -1,6 +1,5 @@
 .content-nav {
   @include size(100% 80px);
-  background: blue;
 
   .wrapper {
     display: flex;
@@ -9,6 +8,11 @@
   }
 
   a {
+    color: black;
+    text-transform: uppercase;
 
+    &:hover {
+      
+    }
   }
 }

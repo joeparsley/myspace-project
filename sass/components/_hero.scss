@@ -11,6 +11,33 @@ $sub-square-height: calc(50% - 2px);
     width: $main-square-width;
     height: 100%;
     float: left;
+    position: relative;
+    color: white;
+
+    img {
+      @include size(100%);
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 10%;
+      left: 20px;
+
+      @include tablet-breakpoint {
+        h2 {
+          font-size: 25px;
+        }
+      }
+      @include desktop-breakpoint {
+        h2 {
+          font-size: 40px;
+        }
+      }
+    }
+
+    h2 {
+      font-size: 20px;
+    }
   }
 
   .top-square {
@@ -18,11 +45,19 @@ $sub-square-height: calc(50% - 2px);
     @include size($sub-square-width $sub-square-height);
     float: right;
     margin-bottom: 4px;
+
+    img {
+      @include size(100%);
+    }
   }
 
   .bottom-square {
     background-color: blue;
     @include size($sub-square-width $sub-square-height);
     float: right;
+
+    img {
+      @include size(100%);
+    }
   }
 }
