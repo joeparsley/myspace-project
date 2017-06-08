@@ -1,14 +1,26 @@
 .content-nav {
-  @include size(100% auto);
+  @include size(100% 80px);
+  position: relative;
 
   .wrapper {
-    // display: flex;
-    // justify-content: space-around;
-    // align-items: center;
-    // overflow: hidden;
+    overflow: hidden;
 
     &::-webkit-scrollbar {
       display: none;
+    }
+
+    .down-triangle {
+      @include triangle(24px, black, down);
+      position: absolute;
+      right: 20px;
+      top: 36px;
+    }
+    .up-triangle {
+      display: none;
+      @include triangle(24px, black, up);
+      position: absolute;
+      right: 20px;
+      top: 34px;
     }
   }
 
@@ -16,19 +28,15 @@
     list-style-type: none;
   }
 
-  .hidden-nav {
-    background-color: green;
-  }
-
-  .visible-nav {
-    background-color: blue;
-  }
-
   li {
     display: inline-block;
     margin-top: 32px;
     margin-bottom: 40px;
-    margin-right: 30px;
+    // margin-right: 30px;
+    &:after {
+      content: ' // ';
+      margin: 0 10px;
+    }
   }
 
   a {
@@ -36,7 +44,7 @@
     text-transform: uppercase;
 
     &:hover {
-
+      background-color: #ccc;
     }
   }
 }
